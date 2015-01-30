@@ -8,7 +8,6 @@ include "/etc/varnish/conf.d/bad_bot_detection.vcl";
 
 sub vcl_recv {
 
-    call device_detection;
     call bad_bot_detection;
 }    
 ```
